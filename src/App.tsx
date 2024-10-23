@@ -51,8 +51,6 @@ function App() {
 
   const { word, setNewWord } = useRandomWord();
 
-  console.log(database);
-
   const incorrectLetters = guessedLetters.filter(
     (letter) => !word.includes(letter)
   );
