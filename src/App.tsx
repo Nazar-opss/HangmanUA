@@ -1,5 +1,4 @@
 import { useCallback, useEffect, useState } from "react";
-// import words from "./wordList.json";
 import HangMan from "./HangMan";
 import HangManWord from "./HangManWord";
 import Keyboard from "./Keyboard";
@@ -43,7 +42,6 @@ function useRandomWord() {
     setNewWord: () => setWord(getWord(wordArr)),
   };
 }
-
 
 function App() {
   const [guessedLetters, setGuessedLetters] = useState<string[]>([]);
