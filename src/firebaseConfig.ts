@@ -2,7 +2,7 @@ import { initializeApp } from "firebase/app";
 import { getDatabase } from "firebase/database";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyA7JIy7HSrQuHmXHPZ7AmeUn1T0_1jYrTE",
+  apiKey: import.meta.env.VITE_API_KEY,
   authDomain: "ukrainianhangman.firebaseapp.com",
   projectId: "ukrainianhangman",
   databaseURL: "https://ukrainianhangman-default-rtdb.europe-west1.firebasedatabase.app/",

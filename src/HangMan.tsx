@@ -106,10 +106,8 @@ function HangMan({ numberOfGuesses, isActive }: HangManProps) {
         ? Body_Arr.slice(0, numberOfGuesses).map((Component, index) => (
             <Component key={index} />
           ))
-        : Body_Arr.map((Component, index) => <Component key={index} />)}
-      {/* {Body_Arr.slice(0, numberOfGuesses).map((Component, index) => (
-        <Component key={index} />
-      ))} */}
+        : Body_Arr.map((Component, index) => <Component key={index} />)
+      }
       <div
         style={{
           height: "50px",
